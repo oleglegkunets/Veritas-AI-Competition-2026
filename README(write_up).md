@@ -3,6 +3,7 @@ Project of Oleg Legkunets, Zhang DonChao and Jindi Li.
 
 LoanWise
 
+Disclaimer: This project is a prototype and is not financial advice.
 
 Track: AI + Finance
 Team: QuantGreats
