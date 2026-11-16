@@ -57,6 +57,7 @@ Based on these results, we chose Random Forest as the final prediction model for
 Although we were pleased with its performance, we also recognised that the model has limitations.
 An F1-score of 0.798 doesn’t mean that every prediction will be correct. The model learns patterns from historical data, and those patterns may not always reflect an individual user’s circumstances.
 There is also a difference between estimating someone’s default risk and knowing whether they will actually repay a loan. Financial situations can change unexpectedly, and no prediction model can account for every possible factor.
+Additionally, we decided to test LoanWise on a much bigger dataset: LendingClub loans (2007–2018). The results are: accuracy on original dataset = 92.3%, while on the LendingClub loans (2007–2018) it was 67.2%. This means the model has some pretty good basis for flagging the default loans, but it struggles in other, bigger datasets.
 
 Challenges and What We Learned
 Training a model to predict loan defaults was a useful starting point, but we felt that a prediction alone wasn’t enough to help someone understand the risks of borrowing.
@@ -80,6 +81,8 @@ Because borrowing decisions can have serious consequences, we believe that trans
 Sources and Tools
 * Dataset: Kaggle – Credit Risk Dataset by Lao Tse
     https://www.kaggle.com/datasets/laotse/credit-risk-dataset
+* Second Dataset (used for testing): Kaggle – Credit Risk Dataset by Lao Tse
+    https://www.kaggle.com/datasets/wordsforthewise/lending-club
 * Programming language: Python
     https://www.python.org/
 * Web application framework: Streamlit
