@@ -1,0 +1,26 @@
+To run our model:
+1. Install the required libraries (one time only). Open a terminal (macOS/Linux) or Command Prompt (Windows) and run:
+pip install streamlit pandas scikit-learn
+
+2. Download the project. Download the Veritas Final Version folder (or the .zip file) and unzip it. Check that it contains:
+Veritas Final Version/
+├── WiseLoanScript.py
+└── Data/
+    └── credit_risk_dataset.csv
+
+3. Go to the project folder. It must contain both the script and the Data folder:
+Veritas Final Version/
+├── WiseLoanScript.py
+└── Data/
+    └── credit_risk_dataset.csv
+Example: if you unzipped it into Downloads:
+cd ~/Downloads/"Veritas Final Version"
+or you can just drag the Veritas Final Version folder from Finder/File Explorer into the terminal window and press Enter.
+
+3. Start the app:
+streamlit run WiseLoanScript.py
+The app opens in your web browser automatically. If it doesn't, go to http://localhost:8501.
+
+4. The first load takes a few seconds while the model trains. Then:
+- Loan Prediction (sidebar): enter the applicant's details and press Predict Loan Risk.
+- About: shows the three models compared and why Random Forest was chosen.
